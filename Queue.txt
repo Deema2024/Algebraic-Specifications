@@ -1,0 +1,9 @@
+Module Queue
+Signatures:
+  enqueue: Element × Queue → Queue
+  dequeue: Queue → Queue
+  front: Queue → Element
+  isEmpty: Queue → Boolean
+Axioms:
+  dequeue(enqueue(x, q)) = q, if isEmpty(q) = false
+  front(enqueue(x, q)) = x, if isEmpty(q) = false
